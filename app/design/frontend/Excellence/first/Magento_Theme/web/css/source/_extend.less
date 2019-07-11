@@ -1,39 +1,123 @@
-.nav-sections {
-    margin-left: 15%;
-    margin-right: 15%;
+body{
+    margin: 0%;
 }
+// Start Header css
 .header.content {
-    padding: 0px 15%;
+    padding: 2% 15% 1% 15%;
+    list-style: none;
 }
 a{
     color:black;
 }
-.footer-copyright{
-    width: 35%;
-    padding-left: 2%;
+a:visited, 
+.alink:visited {
+    color:black;
 }
 .page-header{
-     padding-bottom: 0% !important ;
-     margin: 0% !important;
-     border-bottom: 0% !important;
+    padding-bottom: 0% !important ;
+    margin: 0% !important;
+    border-bottom: none !important;
+
 }
 .page-header .header.panel {
-    background: transparent;
+   background: transparent;
+   margin: 0%;
+   padding: 0%;
 }
 .page-header .panel.wrapper {
-    background-color: #0a0a0a;
+   background-color: #0a0a0a;
+   border-bottom:none;
 }
 .panel {
-    margin-bottom:0%;
-    background-color:0%;
-    border: 0%;
-    border-radius: 0%;
-    -webkit-box-shadow: 0%;
-    box-shadow: 0%;
+   margin-bottom:none !important;
+   background-color:none !important;
+   border: none !important;
+   border-radius: none !important;
+   -webkit-box-shadow: 0%;
+   box-shadow: 0%;
+}
+.minicart-wrapper {
+    margin-top: -30px;
+    margin-right: 12%;
+}
+.block-search {
+    float: right;
+    position: relative;
+    width: 47%;
+    z-index: 4;
+    margin-top:3%;
+}
+.minicart-wrapper .action.showcart::before {
+    background: url('@{baseDir}images/minicart.png');
+    background-repeat:no-repeat;
+    display: inline-block;
+    width: 19px;
+    height: 30px;
+    content: '';
+}
+  .minicart-wrapper .action.showcart.active::before {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 30px;
+}
+.header.content li:nth-child(2) {
+    border: 1px solid #d6cece;
+   padding: 5px;
+   width: 10%;
+   text-align: center;
+   margin-left: 65%;
+   margin-top: -35px;
+   color: #0a0a0a;
+}
+.header.content li:first-child{
+    border: 1px solid #d4d1d1;
+    padding: 5px;
+    width: 8%;
+    float: left;
+    text-align: center;
+    margin-left: 55%;
+    margin-top: -4%;
+    color: #0a0a0a;
+}
+li.item.link.compare{
+    border:none;
+}
+.checkout{
+    float:right;
+    margin-top:-27px;
+    font-size:10px;
+}
+.button{
+    background-color: #0a0a0a;
+    color: white;
+    padding: 11px;
+}
+a:visited, .alink:visited {
+    color: #f1f1f1;
+}
+.header.panel > .header.links{
+    float: left;
+}
+// End Header css
+// Start Navigation css
+.nav-sections {
+    margin-left: 15%; 
+    margin-right: 15%;
 }
 .navigation {
     background: #f7f7f7;
 }
-body{
-    margin: 0% 2%;
+// End Navigation css
+// Start Footer css
+.footer-copyright{
+    width: 35%;
+    padding-left: 2%;
 }
+// End Footer css
+// Start Main Container css
+.page-main {
+    width: 100%;
+    padding: 0px 180px;
+}
+// End Main Container css

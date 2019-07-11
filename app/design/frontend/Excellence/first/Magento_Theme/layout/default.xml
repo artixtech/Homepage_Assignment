@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
     <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
         <body>
-            <move element="authorization-link-login" destination="header-wrapper" after="-"/>
-            <move element="register-link" destination="header-wrapper" before="-"/>
+            <move element="authorization-link-login" destination="header-wrapper" before="-"/>
+            <move element="register-link" destination="header-wrapper" before="-"/> 
             <referenceContainer name="footer_links" remove="true" />
 
             <block class="Magento\Customer\Block\Account\RegisterLink" name="register-link">
