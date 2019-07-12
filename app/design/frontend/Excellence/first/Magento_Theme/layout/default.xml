@@ -3,8 +3,6 @@
         <body>
             <move element="authorization-link-login" destination="header-wrapper" before="-"/>
             <move element="register-link" destination="header-wrapper" before="-"/> 
-            <referenceContainer name="footer_links" remove="true" />
-
             <block class="Magento\Customer\Block\Account\RegisterLink" name="register-link">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">REGISTER</argument>
@@ -15,5 +13,8 @@
                     <argument name="label" xsi:type="string" translate="true">LOGIN</argument>
                 </arguments>
             </block>
+            <referenceContainer name="footer-container">
+                <block class="Magento\Theme\Block\Html\Footer" name="footer" template="html/footer.phtml"/>
+            </referenceContainer>
         </body>
     </page>
