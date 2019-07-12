@@ -1,82 +1,58 @@
 <div class="uper-footer">
-    <div class="block newsletter">
-        <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
-        <div class="content">
-            <form class="form subscribe" 
-                novalidate action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>" method="post"
-                data-mage-init='{"validation": {"errorClass": "mage-error"}}'id="newsletter-validate-detail">
-                <div class="field newsletter" >
-                    <label class="label" for="newsletter"><span><?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?></span></label>
-                    <div>
-                    <input name="email" type="email" id="newsletter"
-                                    placeholder="<?= $block->escapeHtml(__('Enter your email to join our newsletter')) ?>"
-                                    data-validate="{required:true, 'validate-email':true}"/>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('')) ?>" type="submit">
-                        <span><?= $block->escapeHtml(__('JOIN')) ?></span>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
+    <?php
+        echo $this->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('newsletter')
+        ->toHtml();
+    ?>
     <div class="follow-link">
-            <div class="follow"><?= /* @escapeNotVerified */ __('FOLLOW US ON') ?></div>
-            <div class="social-link">
-                <div class="facebook"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/facebook.png");?>"/></a></div>
-                <div class="twitter"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/Twitter.png");?>"/></a></div>
-                <div class="google"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/google.png");?>"/></a></div>
-                <div class="instra"><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/instra.png");?>"/></a></div>
-                <div><a href="#"><img  src="<?php echo $this->getViewFileUrl("images/pinterest.png");?>"/></a></div>  
-            </div>
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('social-1')
+            ->toHtml();
+        ?>
     </div>
 </div>
 <div class="middle-footer">
     <div class="footer-first-row">
-        <span><?= /* @escapeNotVerified */ __('CUSTOMER CARE') ?></span>
-        <table class="footer-table">
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Help Center') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('FAQ') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('How to Buy') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Delivery') ?></a></td></tr>
-        </table>
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-1')
+            ->toHtml();
+        ?>
     </div>
     <div class="footer-second-row">
-        <span><?= /* @escapeNotVerified */ __('ABOUT US') ?></span>
-        <table class="footer-table" >
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Our Stories') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Press') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Career') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Contact') ?></a></td></tr>
-        </table>
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-2')
+            ->toHtml();
+        ?>
     </div>
     <div class="footer-third-row">
-        <span><?= /* @escapeNotVerified */ __('MY ACCOUNT') ?></span>
-        <table class="footer-table">
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Login') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('My Cart') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Order History') ?></a></td></tr>
-            <tr><td><a href="#"><?= /* @escapeNotVerified */ __('Payment') ?></a></td></tr>
-        </table>
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-3')
+            ->toHtml();
+        ?>
     </div>
     <div class="footer-fourth-row">
-        <span><?= /* @escapeNotVerified */ __('OUR STORES') ?></span>
-        <a class="footer-button-first" href="#"><?= /* @escapeNotVerified */ __('SOLO') ?></a>
-        <a class ="footer-button-second" href="#"><?= /* @escapeNotVerified */ __('BOGOR') ?></a>
-        <table class="footer-table">
-            <tr><td><a href="#"><img class="footer-contact" src="<?php echo $this->getViewFileUrl("images/location.png");?>"/><?= /* @escapeNotVerified */ __('Jl. Haji Muhidin, Blok Gno.69') ?></a></td></tr>
-            <tr><td><a href="#"><img class="footer-contact" src="<?php echo $this->getViewFileUrl("images/call.png");?>"/><?= /* @escapeNotVerified */ __('025-2839341') ?></a></td></tr>
-            <tr><td><a href="#"><img class="footer-contact" src="<?php echo $this->getViewFileUrl("images/email.png");?>"/><?= /* @escapeNotVerified */ __('solo@gretong.com') ?></a></td></tr>
-        </table>
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('part-4')
+            ->toHtml();
+        ?>
     </div>
 </div>
 <div class="lower-footer">
-    <table class="copyright-table">
-        <tr>
-            <td><a href="#"><?= /* @escapeNotVerified */ __('&copy; 2015 Gretonger') ?></a></td>
-            <td><a href="#"><?= /* @escapeNotVerified */ __('Terms & Condition') ?> </a></td>
-            <td><a href="#"><?= /* @escapeNotVerified */ __('Privacy Policy') ?></a></td>
-        </tr>
-    </table>
+    <?php
+         echo $this->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('copyright')
+        ->toHtml();
+    ?>
 </div>
