@@ -53,5 +53,77 @@
                     </arguments> 
                 </block>
             </referenceContainer>
+            <referenceContainer name="main.content"> 
+                <block class="Magento\Cms\Block\Block" name="image-1"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-1</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="image-2"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-2</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-3"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-3</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-4"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-4</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-5"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-5</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-6"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-6</argument> 
+                    </arguments> 
+                </block>
+                 <block class="Magento\Cms\Block\Block" name="image-7"> 
+                    <arguments> 
+                        <argument name="Image" xsi:type="string">image-7</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-1"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-1</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-2</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-3</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-4</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-5</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-6</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="link-2"> 
+                    <arguments> 
+                        <argument name="Link" xsi:type="string">link-7</argument> 
+                    </arguments> 
+                </block>
+            </referenceContainer> 
         </body>
     </page>

@@ -15,7 +15,7 @@ a:visited,
 }
 .header.content a:visited, 
 .alink:visited {
-    color:black;
+    color:white;
 }
 .header-call{
     width: 10px;
@@ -128,9 +128,13 @@ header a:visited, .alink:visited{
 .nav-sections {
     margin-left: 15%; 
     margin-right: 15%;
+    margin-bottom: 0%;
 }
 .navigation {
     background: #f7f7f7;
+}
+.navigation .level0 > .level-top:after{
+    background: grey;
 }
 // End Navigation css
 // Start Footer css
@@ -284,5 +288,190 @@ table > tfoot > tr > td {
 .page-main {
     width: 100%;
     padding: 0px 180px;
+}
+.layer{
+    .image-1{
+        width:50%;
+        float:left;
+        padding-right: 8px;
+    }
+    .image-2{
+        width:50%;
+        float:right;
+        padding-left:5px;
+        margin-top:2px;
+    }
+    .image-3{
+        float: left;
+        .under-link{
+            position: absolute;
+            margin-top: -155px;
+            margin-left: 160px;
+            text-align: center;
+        }
+    }
+    .image-4{
+        float: right;
+        width: 29%;
+        margin-top: 2px;
+        .bold-link{
+            position: absolute;
+            margin-top: -45px;
+            font-size: 23px;
+            color: white;
+            margin-left: 10px;
+        }
+        a:visited, 
+        .alink:visited{
+            color:white;
+        }
+        a.bold-link:after{
+            position: absolute;
+            background: url('@{baseDir}images/arrow.png');
+            background-repeat:no-repeat;
+            display: inline-block;
+            width: 19px;
+            height: 30px;
+            content: '';
+            
+        }
+    }
+    .image-5{
+        width: 34.33%;
+        float: left;
+        padding-right: 5px;
+        padding-top: 10px;
+        .bold-link{
+            position: absolute;
+            margin-top: -45px;
+            font-size: 23px;
+            color: white;
+            margin-left: 10px;
+        }
+        a:visited, 
+        .alink:visited{
+            color:white;
+        }
+        a.bold-link:after{
+            position: absolute;
+            background: url('@{baseDir}images/arrow.png');
+            background-repeat:no-repeat;
+            display: inline-block;
+            width: 19px;
+            height: 30px;
+            content: '';
+            
+        }
+    }
+    .image-6{
+        width: 31.33%;
+        float: left;
+        padding-left: 5px;
+        padding-top: 10px;
+        .under-link{
+            position: absolute;
+            margin-top: -100px;
+            margin-left: 45px;
+            text-align: center;
+            a:visited, 
+            .alink:visited {
+                color:white;
+            }
+            .bold-link{
+                font-size: 20px;
+            }
+            .botton{
+                line-height: 3;
+            }
+            .link{
+                border: 1px solid white;
+                padding: 5px;
+            }
+        } 
+    }
+    .image-7{
+        width: 34.33%;
+        float: right;
+        padding-left: 9px;
+        padding-top: 11px;
+        clear:both;
+        .bold-link{
+            position: absolute;
+            margin-top: -45px;
+            font-size: 23px;
+            color: white;
+            margin-left: 10px;
+        }
+        a:visited, 
+        .alink:visited{
+            color:white;
+        }
+        a.bold-link:after{
+            position: absolute;
+            background: url('@{baseDir}images/arrow.png');
+            background-repeat:no-repeat;
+            display: inline-block;
+            width: 19px;
+            height: 30px;
+            content: '';
+            
+        }
+    }
+    .under-link{
+        position: absolute;
+        margin-top: -155px;
+        margin-left: 70px;
+        text-align: center;
+        a:visited, 
+        .alink:visited {
+            color:white;
+        }
+        .bold-link{
+            font-size: 25px;
+        }
+        .botton{
+            line-height: 3;
+        }
+        .link{
+            border: 1px solid white;
+            padding: 5px;
+        }
+    }  
+    a.bold-link:after{
+        position: absolute;
+        background: url('@{baseDir}images/arrow.png');
+        background-repeat:no-repeat;
+        display: inline-block;
+        width: 19px;
+        height: 30px;
+        content: '';
+        
+    }
+}
+.block-title{
+    text-align: center;
+    border: 1px solid gray;
+    width: 16%;
+    position: relative;
+    padding: 5px;
+    margin: 0 auto !important;
+}
+.product-item{
+    width:20%;
+}
+.block.widget .products-grid .product-items{
+    margin-top:50px;
+}
+.columns .column.main{
+    padding-bottom: 0px;
+}
+.page-layout-1column .block.widget .products-grid .product-item:nth-child(5n + 1){
+    margin-left: 25px;
+}
+hr{
+    margin-top: 56px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #dcd4d4;
 }
 // End Main Container css
