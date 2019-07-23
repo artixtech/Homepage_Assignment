@@ -23,7 +23,7 @@
     $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
     $description = false;
 ?>
-    <div class="block widget block-products-list <?= /* @noEscape */ $mode ?>">
+    <div class="block widget block-products-list main-grid<?= /* @noEscape */ $mode ?>">
         <?php if ($block->getTitle()): ?>
         <hr style="color:black;">
         <div class="block-title">
@@ -36,12 +36,12 @@
                 <ol class="product-items <?= /* @noEscape */ $type ?>">
                     <?php $iterator = 1; ?>
                     <?php foreach ($items as $_item): ?>
-                        <?= /* @noEscape */ ($iterator++ == 1) ? '<li class="product-item">' : '</li><li class="product-item">' ?>
+                        <?= /* @noEscape */ ($iterator++ == 1) ? '<li class="product-item uper-grid">' : '</li><li class="product-item uper-grid">' ?>
                         <div class="product-item-info">
                             <a href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>" class="product-item-photo">
                                 <?= $block->getImage($_item, $image)->toHtml() ?>
                             </a>
-                            <div class="product-item-details">
+                            <div class="product-item-details lower-grid">
                                 <strong class="product-item-name">
                                     <a title="<?= $block->escapeHtml($_item->getName()) ?>"
                                        href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>"
